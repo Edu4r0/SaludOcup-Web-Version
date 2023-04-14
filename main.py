@@ -4,10 +4,10 @@ from url import open_pause
 try:
     curr_date = str(date.today())
     path = 'LogData.txt'
-    urllib.request.urlretrieve(
-        'https://drive.google.com/uc?id=1PBTbB0Z3Er-5t_538EC8A6Ko4NXdc01S&export=download', path)
+    #urllib.request.urlretrieve(
+    #    'https://drive.google.com/uc?id=1PBTbB0Z3Er-5t_538EC8A6Ko4NXdc01S&export=download', path)
     # Se lee el archivo LogData == 2 lineas
-    leer = open('LogData', 'r')
+    leer = open('c:\Temp\SaludOcup-Web-Version\LogData.txt', 'r')
     line1 = leer.readline(-1)
     # Se remplaza el salto de linea (\n)E
     url = line1.replace("\n", "")[34:90]
@@ -28,7 +28,10 @@ try:
                 self.browser.urlChanged.connect(self.url_changed)
 
                 self.setCentralWidget(self.browser)
+
+                self.setWindowFlags(Qt.Tool | Qt.WindowStaysOnTopHint | Qt.CustomizeWindowHint)
                 self.showFullScreen()
+   
             # Funcion Cambio de URL if = formResponse
 
             def url_changed(self, url2):

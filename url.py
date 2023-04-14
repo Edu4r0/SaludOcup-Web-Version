@@ -1,6 +1,7 @@
 from imports import *
 
 def open_pause(main_window):
+    main_window.setWindowFlags(Qt.Tool | Qt.WindowStaysOnTopHint | Qt.CustomizeWindowHint)
     view = QWebEngineView(main_window)
     main_window.setCentralWidget(view)
     page = view.page()  # Obtenemos la página cargada
