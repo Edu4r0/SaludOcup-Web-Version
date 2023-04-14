@@ -1,5 +1,5 @@
 from imports import *
-
+print(os.getenv("USERNAME"))
 def open_pause(main_window):
     view = QWebEngineView(main_window)
     main_window.setCentralWidget(view)
