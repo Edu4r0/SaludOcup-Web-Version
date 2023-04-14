@@ -4,8 +4,8 @@ from url import open_pause
 try:
     curr_date = str(date.today())
     path = 'LogData.txt'
-    #urllib.request.urlretrieve(
-    #    'https://drive.google.com/uc?id=1PBTbB0Z3Er-5t_538EC8A6Ko4NXdc01S&export=download', path)
+    urllib.request.urlretrieve(
+        'https://drive.google.com/uc?id=1PBTbB0Z3Er-5t_538EC8A6Ko4NXdc01S&export=download', path)
     # Se lee el archivo LogData == 2 lineas
     leer = open('c:\Temp\SaludOcup-Web-Version\LogData.txt', 'r')
     line1 = leer.readline(-1)
