@@ -5,4 +5,3 @@ from PyQt5.QtWebEngineWidgets import *
 from datetime import date
 import urllib.request
 import sys
-import  os
