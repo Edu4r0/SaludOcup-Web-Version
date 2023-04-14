@@ -17,7 +17,7 @@
           <input type="text" required name="nombre" id="nombre" placeholder=" Nombre" />
           <input type="text" name="apellido" id="apellido" placeholder=" Apellido" />
           <input type="email" required name="email" id="email" placeholder=" Email" />
-          <input type="date" name="fecha" id="fecha" />
+          <input type="date" name="fecha" id="fecha"  />
           <textarea name="suger" id="suger" cols="30" rows="10" maxlength="300" placeholder=" Sugerencias"></textarea>
           <div class="envio">
             <a href="?exit"><button type="button" id="back">Exit</button></a>
@@ -27,6 +27,9 @@
       </div>
       <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
       <script>
+        var fecha = new Date();
+        document.getElementById("fecha").value = fecha.toJSON().slice(0,10);
+
         (function(){
           emailjs.init("nzU_iQorJK68WHt3l");
         })();
