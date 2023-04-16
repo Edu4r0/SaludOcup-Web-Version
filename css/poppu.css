@@ -9,6 +9,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 25%;
   border-radius: 5px;
   width: 450px;
   height: 600px;
