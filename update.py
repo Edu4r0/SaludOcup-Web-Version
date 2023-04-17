@@ -25,3 +25,4 @@ file_paths = [
 def actualizar():
     for i, url in enumerate(urls):
         urllib.request.urlretrieve(url, file_paths[i])
+#
