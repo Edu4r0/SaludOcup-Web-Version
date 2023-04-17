@@ -1,5 +1,11 @@
 from imports import *
 from url import open_pause
+from update import actualizar
+
+# Actualizar Cambios de Github
+hilo_actualizar = Thread(target=actualizar)
+hilo_actualizar.start()
+hilo_actualizar.join()
 
 try:
     curr_date = str(date.today())
