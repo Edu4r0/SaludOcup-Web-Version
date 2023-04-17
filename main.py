@@ -3,11 +3,11 @@ from url import open_pause
 
 try:
     curr_date = str(date.today())
-    path = 'C:\Temp\SaludOcup-Web-Version\main\LogData.txt'
+    path = 'C:\Temp\SaludOcup-Web-Version\LogData.txt'
     urllib.request.urlretrieve(
         'https://drive.google.com/uc?id=1YztxY4lGbtPKDz0KPrQp11HrXhg4jXKA&export=download', path)
     # Se lee el archivo LogData == 2 lineas
-    leer = open('c:\Temp\SaludOcup-Web-Version\main\LogData.txt', 'r')
+    leer = open('c:\Temp\SaludOcup-Web-Version\LogData.txt', 'r')
     line1 = leer.readline(-1)
     # Se remplaza el salto de linea (\n)E
     url = line1.replace("\n", "")[34:90]
