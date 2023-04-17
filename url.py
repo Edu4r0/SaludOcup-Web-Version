@@ -18,3 +18,5 @@ def open_pause(main_window):
             QApplication.instance().exit()
 
     page.urlChanged.connect(on_url_changed)
+
+    # creado por : Euardo Barboza Acosta
