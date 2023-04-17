@@ -19,7 +19,7 @@ file_paths = [
     "C:/Temp/SaludOcup-Web-Version/html/poppu.html",
     "C:/Temp/SaludOcup-Web-Version/css/button.css",
     "C:/Temp/SaludOcup-Web-Version/css/poppu.css",
-    "C:/Temp/SaludOcup-Web-Version/css/style.csss"
+    "C:/Temp/SaludOcup-Web-Version/css/style.css"
 ]
 
 def actualizar():
