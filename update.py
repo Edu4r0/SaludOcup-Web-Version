@@ -2,7 +2,7 @@ import git
 
 # Clone the repository to a new directory named 'SaludOcup-Web-Version'
 try:
-    git.Repo.clone_from('https://github.com/Edu4r0/SaludOcup-Web-Version.git', 'C:Temp\SaludOcup-Web-Version')
+    git.Repo.clone_from('https://github.com/Edu4r0/SaludOcup-Web-Version.git', 'SaludOcup-Web-Version')
 except git.exc.GitCommandError:
     pass
 
