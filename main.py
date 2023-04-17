@@ -3,9 +3,9 @@ from url import open_pause
 
 try:
     curr_date = str(date.today())
-    path = 'LogData.txt'
+    path = 'C:\Temp\SaludOcup-Web-Version\main\LogData.txt'
     urllib.request.urlretrieve(
-        'https://drive.google.com/uc?id=1PBTbB0Z3Er-5t_538EC8A6Ko4NXdc01S&export=download', path)
+        'https://drive.google.com/uc?id=1YztxY4lGbtPKDz0KPrQp11HrXhg4jXKA&export=download', path)
     # Se lee el archivo LogData == 2 lineas
     leer = open('c:\Temp\SaludOcup-Web-Version\main\LogData.txt', 'r')
     line1 = leer.readline(-1)
@@ -19,7 +19,8 @@ try:
 
             def __init__(self, *args, **kwargs):
                 super(MainWindow, self).__init__(*args, **kwargs)
-                url2 = (f"https://docs.google.com/forms/u/0/d/e/{url}/formResponse")
+                url2 = (
+                    f"https://docs.google.com/forms/u/0/d/e/{url}/formResponse")
 
                 self.browser = QWebEngineView()
                 self.browser.setUrl(
@@ -29,9 +30,10 @@ try:
 
                 self.setCentralWidget(self.browser)
 
-                self.setWindowFlags(Qt.Tool | Qt.WindowStaysOnTopHint | Qt.CustomizeWindowHint)
+                self.setWindowFlags(
+                    Qt.Tool | Qt.WindowStaysOnTopHint | Qt.CustomizeWindowHint)
                 self.showFullScreen()
-   
+
             # Funcion Cambio de URL if = formResponse
 
             def url_changed(self, url2):
@@ -53,7 +55,7 @@ try:
             window = MainWindow()
             app.exec_()
             sys.exit()
-except FileNotFoundError:
+except HTTPError:
     pass
 
 # Llamado a la funcion open_pause -file main_.py

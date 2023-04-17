@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   background: black;
   padding: 0;
@@ -22,12 +22,12 @@ body {
   padding: 3px;
   border-radius: 5px;
 }
-#barra-white{
+#barra-white {
   position: relative;
   background: rgb(179, 185, 247);
   padding: 3px;
   border-radius: 5px;
-  
+
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #countdown-btn {
@@ -43,7 +43,7 @@ body {
   border-radius: 5px;
   background-repeat: no-repeat;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
 }
 #countdown-btn:hover {
@@ -67,7 +67,7 @@ body {
   border-radius: 5px;
   margin-left: 5px;
 }
-.email:hover{
+.email:hover {
   cursor: pointer;
   background-color: #465df3;
 }
@@ -88,7 +88,7 @@ body {
   border-radius: 5px;
   margin-right: 5px;
 }
-.email2:hover{
+.email2:hover {
   cursor: pointer;
   background-color: #445bf3;
 }
