@@ -1,6 +1,5 @@
 from imports import *
 from url import open_pause
-from update import actualizar
 
 try:
     curr_date = str(date.today())
