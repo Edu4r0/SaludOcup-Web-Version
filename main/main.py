@@ -7,7 +7,7 @@ try:
     urllib.request.urlretrieve(
         'https://drive.google.com/uc?id=1PBTbB0Z3Er-5t_538EC8A6Ko4NXdc01S&export=download', path)
     # Se lee el archivo LogData == 2 lineas
-    leer = open('c:\Temp\SaludOcup-Web-Version\LogData.txt', 'r')
+    leer = open('c:\Temp\SaludOcup-Web-Version\main\LogData.txt', 'r')
     line1 = leer.readline(-1)
     # Se remplaza el salto de linea (\n)E
     url = line1.replace("\n", "")[34:90]
