@@ -65,4 +65,4 @@ if __name__ == '__main__':
     open_pause(window)
     window.showFullScreen()
     app.exec_()
-# Creado por Eduardo Barboza #
+## Creado por Eduardo Barboza ##
