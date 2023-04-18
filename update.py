@@ -1,4 +1,5 @@
 import git
+import time
 
 # Clone the repository to a new directory named 'SaludOcup-Web-Version'
 try:
@@ -6,8 +7,13 @@ try:
 except git.exc.GitCommandError:
     pass
 
-# Open the existing repository in the 'SaludOcup-Web-Version' directory
-repo = git.Repo('C:\Temp\SaludOcup-Web-Version')
+while True:
+    # Open the existing repository in the 'SaludOcup-Web-Version' directory
+    repo = git.Repo('C:\Temp\SaludOcup-Web-Version')
 
-# Pull the latest changes from the remote repository
-repo.remotes.origin.pull()
+    # Pull the latest changes from the remote repository
+    repo.remotes.origin.pull()
+
+    # Wait for 10 seconds before checking for changes again
+    time.sleep(30)
+
