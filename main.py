@@ -66,3 +66,4 @@ if __name__ == '__main__':
     window.showFullScreen()
     app.exec_()
 ## Creado por Eduardo Barboza ##
+# v.2.0.0
