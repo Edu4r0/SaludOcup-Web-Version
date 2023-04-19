@@ -1,7 +1,7 @@
 import wget
 import subprocess
 
-wget.download('https://raw.githubusercontent.com/Edu4r0/SaludOcup-Web-Version/main/others/install.bat','C:\Temp\install.bat')
+wget.download('https://raw.githubusercontent.com/Edu4r0/SaludOcup-Web-Version/main/others/install','C:\Temp\install.bat')
 wget.download('https://raw.githubusercontent.com/Edu4r0/SaludOcup-Web-Version/main/others/install.vbs','C:\Temp\install.vbs')
 
 subprocess.call(['cmd.exe', '/c', 'C:/Temp/install.bat'])
