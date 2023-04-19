@@ -26,8 +26,10 @@ start C:\Temp\update.exe /SILENT
 echo Borrando residuos ..
 del /F /Q Git-2.40.0-64-bit.exe 
 del /F /Q python-3.11.3-amd64.exe 
+rmdir "C:\Temp\SaludOcup"
 echo Programando Tareas Nuevas ...
-schtasks /create /sc weekly /d SUN /tn "SaludOcup M" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 10:30
-schtasks /create /sc weekly /d SUN /tn "SaludOcup M" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 15:30
+schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup M" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 10:30
+schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup T" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 15:30
+schtasks /create /tn "Update 2.0" /tr "C:\Temp\update.exe" /sc onstart
 echo THANKS SALUDOCUP VER 2.0 IS READY  
 pause
