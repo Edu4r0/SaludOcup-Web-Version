@@ -2,19 +2,24 @@ from imports import *
 from url import open_pause
 
 try:
-    curr_date = str(date.today())
-    path = 'C:\Temp\SaludOcup-Web-Version\LogData.txt'
+    # Descargar el archivo de LogData
+    opener = urllib.request.build_opener()
+    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+    urllib.request.install_opener(opener)
+    path = 'C:\\Temp\\SaludOcup-Web-Version\\LogData.txt'
     urllib.request.urlretrieve(
         'https://drive.google.com/uc?id=1YztxY4lGbtPKDz0KPrQp11HrXhg4jXKA&export=download', path)
-    # Se lee el archivo LogData == 2 lineas
-    leer = open('c:\Temp\SaludOcup-Web-Version\LogData.txt', 'r')
-    line1 = leer.readline(-1)
-    # Se remplaza el salto de linea (\n)E
-    url = line1.replace("\n", "")[34:90]
-    line2 = leer.readline(-2)
 
-    # If line2 == fecha de dia actual instacia la clase
-    if line2 == curr_date:
+    # Leer el archivo LogData
+    with open('C:\\Temp\\SaludOcup-Web-Version\\LogData.txt', 'r') as f:
+        line1 = f.readline()
+        url = line1[34:90].strip()
+        line2 = f.readline()
+
+    curr_date = str(date.today())
+
+    # Si la segunda línea del archivo LogData coincide con la fecha actual, instanciar la clase MainWindow
+    if line2.strip() == curr_date:
         class MainWindow(QMainWindow):
 
             def __init__(self, *args, **kwargs):
@@ -55,7 +60,8 @@ try:
             window = MainWindow()
             app.exec_()
             sys.exit()
-except HTTPError:
+
+except HTTPError as e:
     pass
 
 # Llamado a la funcion open_pause -file main_.py
