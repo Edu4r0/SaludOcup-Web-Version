@@ -1,5 +1,4 @@
 @echo off
-chcp 65001
 echo Borrando Antigua Version...
 rmdir /s /q C:\Temp\SaludOcup
 echo Carpeta borrada exitosamente.
