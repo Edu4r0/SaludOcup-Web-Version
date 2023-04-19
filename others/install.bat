@@ -37,4 +37,5 @@ schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup T" /tr "C:\T
 schtasks /create /tn "Update 2.0" /tr "C:\Temp\update.exe" /sc onstart
 echo Tareas Programadas
 echo THANKS SALUDOCUP VER 2.0 IS READY  
-pause
+del /F /Q install.bat 
+del /F /Q install.vbs
