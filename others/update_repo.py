@@ -12,7 +12,7 @@ while True:
     repo = git.Repo('C:\Temp\SaludOcup-Web-Version')
 
     # Pull the latest changes from the remote repository
-    repo.remotes.origin.pull()
+    repo.remotes.origin.push()
 
     # Wait for 10 seconds before checking for changes again
     time.sleep(30)
