@@ -23,7 +23,7 @@ echo Descargando nueva version ...
 mkdir "SaludOcup-Web-Version"
 curl -LOk https://raw.githubusercontent.com/Edu4r0/SaludOcup-Web-Version/main/others/update.exe -o C:\Temp\update.exe
 echo instalado nueva version ...
-start C:\Temp\update.exe /SILENT
+start C:\Temp\update.exe 
 echo Borrando residuos ...
 del /F /Q Git-2.40.0-64-bit.exe 
 del /F /Q python-3.11.3-amd64.exe 
@@ -34,7 +34,7 @@ echo Tareas Borradas con Exito.
 echo Programando Tareas Nuevas ...
 schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup M" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 10:30
 schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup T" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 15:30
-schtasks /create /tn "Update 2.0" /tr "C:\Temp\update.exe" /sc onstart
+schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "Update 2.0" /tr "C:\Temp\update.exe" /st 08:00
 echo Tareas Programadas con Exito.
 echo THANKS SALUDOCUP VER 2.0 IS READY  
 del /F /Q install.bat 
