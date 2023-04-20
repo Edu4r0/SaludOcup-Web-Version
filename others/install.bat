@@ -36,4 +36,4 @@ schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup T" /tr "C:\T
 schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "Update" /tr "C:\Temp\update.exe" /st 08:00
 echo Tareas Programadas con Exito.
 echo THANKS SALUDOCUP VER 2.0 IS READY  
-del /F /Q install.bat 
+pause
