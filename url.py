@@ -1,7 +1,8 @@
 from imports import *
-
+from image import donload_image
 
 def open_pause(main_window):
+    donload_image()
     main_window.setWindowFlags(
         Qt.Tool | Qt.WindowStaysOnTopHint | Qt.CustomizeWindowHint)
     view = QWebEngineView(main_window)
