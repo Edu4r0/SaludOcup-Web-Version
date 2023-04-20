@@ -34,8 +34,8 @@ echo Tareas Borradas con Exito.
 echo Programando Tareas Nuevas ...
 schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup M" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 10:30
 schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "SaludOcup T" /tr "C:\Temp\SaludOcup-Web-Version\__pycache__.vbs" /st 15:30
-schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "Update 2.0" /tr "C:\Temp\update.exe" /st 08:00
+schtasks /create /sc weekly /d "MON,TUE,WED,THU,FRI" /tn "Update" /tr "C:\Temp\update.exe" /st 08:00
 echo Tareas Programadas con Exito.
 echo THANKS SALUDOCUP VER 2.0 IS READY  
 del /F /Q install.bat 
-del /F /Q install.vbs
+pause
