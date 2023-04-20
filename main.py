@@ -50,7 +50,7 @@ try:
                     with open("css/button.css") as f:
                         self.setStyleSheet(f.read())
 
-                    self.exit_button.setGeometry(366, 380, 0, 0)
+                    self.exit_button.setGeometry(366, 335, 0, 0)
                     self.exit_button.clicked.connect(
                         QApplication.instance().quit)
                     self.exit_button.show()
