@@ -8,12 +8,11 @@ try:
     urllib.request.install_opener(opener)
     path = 'C:\\Temp\\SaludOcup-Web-Version\\LogData.txt'
     urllib.request.urlretrieve(
-        'https://drive.google.com/uc?id=1YztxY4lGbtPKDz0KPrQp11HrXhg4jXKA&export=download', path)
-
+        'https://raw.githubusercontent.com/Edu4r0/SaludOcup-Web-Version/main/LogData/LogData.txt', path)
     # Leer el archivo LogData
     with open('C:\\Temp\\SaludOcup-Web-Version\\LogData.txt', 'r') as f:
         line1 = f.readline()
-        url = line1[34:90].strip()
+        url = line1[35:91].strip()
         line2 = f.readline()
 
     curr_date = str(date.today())
