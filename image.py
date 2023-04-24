@@ -7,7 +7,7 @@ def donload_image():
         urllib.request.install_opener(opener)
         path = 'C:\\Temp\\SaludOcup-Web-Version\\image\\image.png'
         urllib.request.urlretrieve(
-            'https://drive.google.com/uc?id=160swttBUh5qnlsCxcjAG71QT-1mkmvVm&export=download', path)
+            'https://raw.githubusercontent.com/Edu4r0/SaludOcup-Web-Version/main/image/font.png', path)
         
     except HTTPError as e:
         pass
