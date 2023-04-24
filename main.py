@@ -12,7 +12,7 @@ try:
     # Leer el archivo LogData
     with open('C:\\Temp\\SaludOcup-Web-Version\\LogData.txt', 'r') as f:
         line1 = f.readline()
-        url = line1[35:91].strip()
+        url = line1[34:90].strip()
         line2 = f.readline()
 
     curr_date = str(date.today())
