@@ -1,5 +1,4 @@
 from imports import *
-from url import open_pause
 
 
 class MainWindow(QMainWindow):
@@ -9,31 +8,20 @@ class MainWindow(QMainWindow):
 
                 self.browser = QWebEngineView()
                 self.browser.setUrl(
-                    QUrl(f'www.google.com'))
+                    QUrl(f'https://www.google.com'))
 
-                self.browser.urlChanged.connect(self.url_changed)
-
+                response = requests.get('http://localhost:5000/UsersList')
+                x = response.json()
+                print(x)
                 self.setCentralWidget(self.browser)
 
-                self.setWindowFlags(
-                    Qt.Tool | Qt.WindowStaysOnTopHint | Qt.CustomizeWindowHint)
-                self.showFullScreen()
+                #self.setWindowFlags(
+                #    Qt.Tool | Qt.WindowStaysOnTopHint | Qt.CustomizeWindowHint)
+                #self.showFullScreen()
 
-            # Funcion Cambio de URL if = formResponse
+                self.show()
 
-            def url_changed(self, url2):
-                if self.browser.url() == url2:
-
-                    self.exit_button = QPushButton('Cerrar', self.browser)
-                    self.exit_button.setFixedSize(640, 68)
-
-                    with open("css/button.css") as f:
-                        self.setStyleSheet(f.read())
-
-                    self.exit_button.setGeometry(366, 335, 0, 0)
-                    self.exit_button.show()
-                    self.exit_button.clicked.connect(
-                    QApplication.instance().quit)
+          
                     
 
 if __name__ == '__main__':
