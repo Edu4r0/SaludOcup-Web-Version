@@ -1,7 +1,8 @@
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtWebEngineWidgets import *
+import webview
+from datetime import datetime
+import platform
 import requests
 import json
 import sys
+
+
