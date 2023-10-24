@@ -6,15 +6,15 @@ def DataUrl():
     user = getuser()
     
     try :
-        response = requests.post('http://localhost:5000/api',params={
+        response = requests.post('http://localhost:5000/api/v1',params={
             'name' : user,
             'status' : True
         })
         data = response.json()
 
         isrun = data['user']['result']['run']
-        if (isrun):
-            url = data['user']['url']
+        if (isrun == True):
+            url = data['user']['run']
             return url
         
         if(response.status_code == 500 or 400):
