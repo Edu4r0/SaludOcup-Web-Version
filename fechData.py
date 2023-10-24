@@ -12,9 +12,9 @@ def DataUrl():
         })
         data = response.json()
 
-        isrun = data['user']['result']['run']
+        isrun = data['user']['run']
         if (isrun == True):
-            url = data['user']['run']
+            url = data['user']['url']
             return url
         
         if(response.status_code == 500 or 400):
