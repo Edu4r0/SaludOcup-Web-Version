@@ -1,4 +1,5 @@
 from imports import *
+from url import ROOT_DIR
 
 def ErrorUrl (user,error):
         data = {
@@ -7,5 +8,5 @@ def ErrorUrl (user,error):
         "error" : error
         }
 
-        with open('log.txt','w') as file:
+        with open(ROOT_DIR + '\\log.txt','w') as file:
             file.write(str(data))

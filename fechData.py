@@ -22,4 +22,4 @@ def DataUrl():
             raise Exception(data)    
            
     except Exception as error:
-       ErrorUrl(user, error.msg)
+       ErrorUrl(user, error.args)
