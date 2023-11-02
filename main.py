@@ -22,7 +22,7 @@ else:
                 continue
 
     if __name__ == '__main__':
-        window = webview.create_window('SOP', url, on_top=True)
+        window = webview.create_window('SOP', url,fullscreen=True, on_top=True)
 
         url_thread = threading.Thread(target=get_current_url, args=(window,))
         url_thread.daemon = True
