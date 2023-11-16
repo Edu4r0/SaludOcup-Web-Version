@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 *.txt
 .vscode/
+*.spec
+build/
+dist/
+lib/
+scripts/
