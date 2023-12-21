@@ -14,13 +14,14 @@ def DataUrl():
         data = response.json()
 
         isrun = data['user']['run']
+
+        if(response.status_code == 500 or 400):
+            raise Exception(data)  
+         
         if (isrun == True):
             url = data['user']['url']
             return url
         else:
-           sys.exit()
-        if(response.status_code == 500 or 400):
-            raise Exception(data)    
-           
+            return
     except Exception as error:
        ErrorUrl(user, error.args)
