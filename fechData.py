@@ -17,7 +17,8 @@ def DataUrl():
         if (isrun == True):
             url = data['user']['url']
             return url
-        
+        else:
+           sys.exit()
         if(response.status_code == 500 or 400):
             raise Exception(data)    
            

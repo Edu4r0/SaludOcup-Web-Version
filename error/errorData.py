@@ -1,5 +1,4 @@
 from imports import *
-from url import ROOT_DIR
 
 def ErrorUrl (user,error):
         data = {
@@ -8,5 +7,5 @@ def ErrorUrl (user,error):
         "error" : error
         }
 
-        with open(ROOT_DIR + '\\log.txt','w') as file:
+        with open('C:\Temp\SaludOcup-Web-Version' + '\\log.txt','w') as file:
             file.write(str(data))
