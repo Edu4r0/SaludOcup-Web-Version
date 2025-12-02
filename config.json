@@ -7,11 +7,11 @@
   },
   {
    "optionDest": "filenames",
-   "value": "C:/Users/AUXILIARSISTEMAS/Documents/Documents/Proyectos/SaludOcup-Web-Version-1/main.py"
+   "value": "C:/proyect/SaludOcup-Web-Version/main.py"
   },
   {
    "optionDest": "onefile",
-   "value": false
+   "value": true
   },
   {
    "optionDest": "console",
@@ -19,11 +19,7 @@
   },
   {
    "optionDest": "icon_file",
-   "value": "C:/Users/AUXILIARSISTEMAS/Documents/Documents/Proyectos/SaludOcup-Web-Version-1/image/icono.ico"
-  },
-  {
-   "optionDest": "ascii",
-   "value": false
+   "value": "C:/proyect/SaludOcup-Web-Version/image/icono.ico"
   },
   {
    "optionDest": "clean_build",
@@ -42,10 +38,6 @@
    "value": false
   },
   {
-   "optionDest": "embed_manifest",
-   "value": true
-  },
-  {
    "optionDest": "uac_admin",
    "value": false
   },
@@ -54,11 +46,7 @@
    "value": false
   },
   {
-   "optionDest": "win_private_assemblies",
-   "value": false
-  },
-  {
-   "optionDest": "win_no_prefer_redirects",
+   "optionDest": "argv_emulation",
    "value": false
   },
   {
@@ -66,24 +54,40 @@
    "value": false
   },
   {
-   "optionDest": "argv_emulation",
-   "value": false
+   "optionDest": "datas",
+   "value": "C:/proyect/SaludOcup-Web-Version/Events;Events/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/AUXILIARSISTEMAS/Documents/Documents/Proyectos/SaludOcup-Web-Version-1/error;error/"
+   "value": "C:/proyect/SaludOcup-Web-Version/image;image/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/AUXILIARSISTEMAS/Documents/Documents/Proyectos/SaludOcup-Web-Version-1/image;image/"
+   "value": "C:/proyect/SaludOcup-Web-Version/user;user/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/AUXILIARSISTEMAS/Documents/Documents/Proyectos/SaludOcup-Web-Version-1/user;user/"
+   "value": "C:/proyect/SaludOcup-Web-Version/.vscode;.vscode/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/AUXILIARSISTEMAS/Documents/Documents/Proyectos/SaludOcup-Web-Version-1/fechData.py;."
+   "value": "C:/proyect/SaludOcup-Web-Version/.env;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/proyect/SaludOcup-Web-Version/fechData.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/proyect/SaludOcup-Web-Version/main.spec;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/proyect/SaludOcup-Web-Version/config.json;."
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "dotenv"
   }
  ],
  "nonPyinstallerOptions": {
