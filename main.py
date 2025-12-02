@@ -14,7 +14,7 @@ load_dotenv()
 URL_API = os.getenv("URLAPI")
 
 # Horarios (24H)
-SCHEDULES = ["08:50", "11:25"]  # 10:30 AM y 2:30 PM
+SCHEDULES = ["10:30", "14:30"]  # 10:30 AM y 2:30 PM
 
 # Para evitar repetir anuncios el mismo día
 shown_today = set()
